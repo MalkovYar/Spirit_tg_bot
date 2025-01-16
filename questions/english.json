@@ -1,0 +1,20 @@
+[
+    {
+      "question": "Как будет 'я' на английском языке?",
+      "options": ["I", "You", "We"],
+      "correct_option_id": 0,
+      "explanation": "Правильный ответ: I."
+    },
+    {
+      "question": "Как переводится глагол 'run'?",
+      "options": ["бежать", "идти", "стоять"],
+      "correct_option_id": 0,
+      "explanation": "Правильный ответ: бежать."
+    },
+    {
+      "question": "Как будет 'он' на английском языке?",
+      "options": ["He", "She", "It"],
+      "correct_option_id": 0,
+      "explanation": "Правильный ответ: He."
+    }
+  ]
