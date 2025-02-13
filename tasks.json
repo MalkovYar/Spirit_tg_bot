@@ -1,0 +1,27 @@
+{
+    "version": "0.0.1",
+    "tasks": [
+        {
+            "label": "Build_bot",
+            "type": "shell",
+            "command": "npm run webpack",
+            "windows": {
+              "command": "npm run webpack"
+            },
+            "presentation": {
+              "reveal": "always",
+              "panel": "new"
+            },
+            "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "Start_bot",
+            "type": "shell",
+            "command": "npm run",
+            "args": [
+                "start"
+            ],
+            "runOptions": { "runOn": "folderOpen" }
+        }
+    ]
+}

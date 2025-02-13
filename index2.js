@@ -1,5 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
-const bot = new TelegramBot('7911123866:AAE5ZGv8x7n1FsfwiIbZZA32YUGEh5r7bA0', { polling: true });
+const fs = require('fs');
+
+
+const bot = new TelegramBot('7911123866:AAE5ZGv8x7n1FsfwiIbZZA32YUGEh5r7bA0', { polling: true }); // Вместо слова TOKEN, укажите реальный токен вашего бота, который выдал вам BotFather 
+
+
 const ADMIN_ID = '1798265937';
 let awaitingSupportMessage = {}; // Хранение информации о пользователях, ожидающих поддержки
 // Хранение выбранных тем для пользователей
@@ -134,7 +139,7 @@ bot.onText(/\/donate/, (msg) => {
       'XTR', // Валюта "XTR"
       [{ label: 'Донат', amount: 1 }], // Сумма: 1 Stars
     );
-  });
+});
 
 bot.onText(/\/support/, (msg) => {
     const chatId = msg.chat.id;
